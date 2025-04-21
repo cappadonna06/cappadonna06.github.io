@@ -1,109 +1,55 @@
-/* Reset & base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marc Sells</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-/* Hero Section */
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url('images/background.jpg') no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-.overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-.content {
-  position: relative;
-  z-index: 1;
-  padding: 1rem;
-}
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-bottom: 1rem;
-  object-fit: cover;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-.hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <img src="images/marc.jpg" alt="Marc" class="profile-pic" />
+      <h1>marcsells.com</h1>
+      <p>Not a realtor. Just Marc.</p>
+    </div>
+  </section>
 
-/* Sections */
-section {
-  padding: 60px 20px;
-}
-.container {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.about p {
-  font-size: 1rem;
-}
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        Since I can remember typing in <strong>"marcsells.com"</strong> in browsers like Netscape and AOL, it was always some schmuck named Marc trying to sell houses.
+        Fast forward years later, after routinely checking which real estate agent had squatted on *my* name, I was pleasantly surprised to find their ownership had expired — and I scooped it up.
+      </p>
+    </div>
+  </section>
 
-/* Work */
-.work .linkedin {
-  display: inline-block;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  color: #0077b5;
-  text-decoration: none;
-}
-.resume {
-  list-style: none;
-  padding: 0;
-}
-.resume li {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
+  <!-- Work Section -->
+  <section class="work">
+    <div class="container">
+      <h2>Work</h2>
+      <a href="https://www.linkedin.com/in/marcsells/" target="_blank" class="linkedin">🔗 LinkedIn</a>
+      <ul class="resume">
+        <li><strong>Product Manager</strong> – Google</li>
+        <li><strong>Program Manager</strong> – Amazon</li>
+        <li><strong>MBA</strong> – Wharton</li>
+        <li><strong>B.S.</strong> – UC Berkeley</li>
+      </ul>
+    </div>
+  </section>
 
-/* Family */
-.family-photo {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  margin-top: 1rem;
-}
+  <!-- Family Section -->
+  <section class="family">
+    <div class="container">
+      <h2>Family</h2>
+      <img src="images/family.jpg" alt="Marc's Family" class="family-photo"/>
+    </div>
+  </section>
 
-/* Mobile Responsive */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-  .profile-pic {
-    width: 100px;
-    height: 100px;
-  }
-}
+</body>
+</html>
