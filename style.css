@@ -15,10 +15,10 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  background-image: url("images/background.jpg");
+  background-image: url("images/bg.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 70vh; /* reduced height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,11 +42,11 @@ body {
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 4px solid white;
   margin-bottom: 20px;
 }
 
@@ -58,3 +58,70 @@ section {
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+p, li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+ul.resume {
+  list-style: none;
+  padding: 0;
+}
+
+ul.resume li {
+  margin-bottom: 10px;
+}
+
+/* Family Photo */
+.family-photo {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+
+/* LinkedIn Link */
+.linkedin {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
